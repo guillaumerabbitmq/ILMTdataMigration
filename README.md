@@ -36,6 +36,9 @@ Migration begins, Version 1.4, Mode simulation Yes, Classification Yes, Exclusio
 gm8|25|552562510|No source Bigfix id found|
 qradar-gm|81|1626422064|No source Bigfix id found|
 FRDOSOUEN|	1612917	| 6778593	|5	|0	|0	|0	|5	|.:Incorrect product_realase_guid value - it can not be found in the catalog.|	Migration
+slp|540577888|549743255|5|0|0|3|2|.:The instance can not be bundled to the product. If it's a custom bundling, please define it first.:Component not found on the computer. Could be due to incorrect discovery_path.|Migration
+FRSVP|1087931947|5584682|9|0|0|8|1|.:Component not found on the computer. Could be due to incorrect discovery_path.|Migration
+INFTST|27|25|58|0|0|58|0|.|Migration
 
 
  Les exclusions.
