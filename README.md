@@ -24,9 +24,8 @@ An XML file is provide to setup common parameters of actions to be run during th
 perl MigrationILMT1.4.pl
 
 
-"Migration begins, Version 1.4, Mode simulation Yes, Classification Yes, Exclusion Yes, Silent Non"
-
-"-- Querying Source     |gm7.swglab.fr.ibm.com | port:9081 | version:9.2.23.0-20210317-1132| 2 servers"
+'Migration begins, Version 1.4, Mode simulation Yes, Classification Yes, Exclusion Yes, Silent Non'
+'-- Querying Source     |gm7.swglab.fr.ibm.com | port:9081 | version:9.2.23.0-20210317-1132| 2 servers'
  
  -- Writing Destination |gm8.swglab.fr.ibm.com | port:9081 | version:9.2.23.0-20210317-1132| 3 servers
 
