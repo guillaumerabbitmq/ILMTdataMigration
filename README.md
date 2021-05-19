@@ -40,3 +40,9 @@ FRDOSOUEN|	1612917	| 6778593	|5	|0	|0	|0	|5	|.:Incorrect product_realase_guid va
  Serveur | Internal ID | Bigfix ID Destination | Bigfix ID Source | Nb d'exclusion | Details...
 gm8|25|552562510|No source Bigfix id |
 qradar-gm|81|1626422064|No source Bigfix id |
+
+
+As Kanye West said:
+
+> We're living the future so
+> the present is our past
