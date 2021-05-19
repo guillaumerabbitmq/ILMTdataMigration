@@ -4,7 +4,7 @@ ilmtMigration  is a simple perl script to help ILMT user to migrate data from on
 Notice : Minimum version of ILMT is 9.2.14
 
 The perl script has several options detailled below.
-It is provided as is.
+It is provided as is. So test, test and test before set simulation=No.
 # Config file
 An XML file is provide to setup common parameters of actions to be run during the migration process.
 # Common config parameters:
@@ -27,7 +27,7 @@ An XML file is provide to setup common parameters of actions to be run during th
 perl MigrationILMT1.4.pl
 
 
-Migration begins, Version 1.4, Mode simulation Yes, Classification Yes, Exclusion Yes, Silent Non
+Migration begins, Version 1.4, Mode simulation No, Classification Yes, Exclusion Yes, Silent Non
 -- Querying Source     |gm7 | port:9081 | version:9.2.19.0-20200323-2324| 2 servers
 -- Writing Destination |gm8 | port:9081 | version:9.2.23.0-20210317-1132| 3 servers
 
@@ -38,7 +38,11 @@ qradar-gm|81|1626422064|No source Bigfix id found|
 FRDOSOUEN|	1612917	| 6778593	|5	|0	|0	|0	|5	|.:Incorrect product_realase_guid value - it can not be found in the catalog.|	Migration
 slp|540577888|549743255|5|0|0|3|2|.:The instance can not be bundled to the product. If it's a custom bundling, please define it first.:Component not found on the computer. Could be due to incorrect discovery_path.|Migration
 FRSVP|1087931947|5584682|9|0|0|8|1|.:Component not found on the computer. Could be due to incorrect discovery_path.|Migration
-INFTST|27|25|58|0|0|58|0|.|Migration
+
+....
+INFTST|27|25|58|0|0|58|0|.|Migration [Components are migrated, switch Simulation = No]
+....
+gm92|3|1083971174|15462954|14|0|0|0|14|.:Component not found on the computer. Could be due to incorrect discovery_path.|Simulated [This is an example of classification in simulated, switch simulation = Yes]
 
 
  Les exclusions.
