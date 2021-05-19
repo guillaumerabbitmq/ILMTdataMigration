@@ -1,6 +1,8 @@
 # ILMT Data Migration
 ilmtMigration  is a simple perl script to help ILMT user to migrate data from one old ILMT server to another brand new ILMT server. Thie script were use for instance during migration of ILMT/Bigfix server, or during merge of 2 ILMT server to one consolidate. The test I run were with Strawberry perl.
 
+Notice : Minimum version of ILMT is 9.2.14
+
 The perl script has several options detailled below.
 It is provided as is.
 # Config file
