@@ -28,8 +28,8 @@ perl MigrationILMT1.4.pl
 
 
 Migration begins, Version 1.4, Mode simulation Yes, Classification Yes, Exclusion Yes, Silent Non
--- Querying Source     |gm7.swglab.fr.ibm.com | port:9081 | version:9.2.23.0-20210317-1132| 2 servers
--- Writing Destination |gm8.swglab.fr.ibm.com | port:9081 | version:9.2.23.0-20210317-1132| 3 servers
+-- Querying Source     |gm7 | port:9081 | version:9.2.19.0-20200323-2324| 2 servers
+-- Writing Destination |gm8 | port:9081 | version:9.2.23.0-20210317-1132| 3 servers
 
  Les classifications.
  Server | ID interne | Bigfix ID Destination | Bigfix ID Source | #Components source | # Valid Instances Confirmed | # Valid Instances Bundled | #Instances unmodified | #Instances Invalid | Reasons Invalid Instances |
