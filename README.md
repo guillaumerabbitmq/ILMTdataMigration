@@ -21,13 +21,13 @@ An XML file is provide to setup common parameters of actions to be run during th
  - Set up a list of server to migrate into that file. One server per line : "inputserver"
 
 # How to run
+```perl
 perl MigrationILMT1.4.pl
 
 
-'Migration begins, Version 1.4, Mode simulation Yes, Classification Yes, Exclusion Yes, Silent Non'
-'-- Querying Source     |gm7.swglab.fr.ibm.com | port:9081 | version:9.2.23.0-20210317-1132| 2 servers'
- 
- -- Writing Destination |gm8.swglab.fr.ibm.com | port:9081 | version:9.2.23.0-20210317-1132| 3 servers
+Migration begins, Version 1.4, Mode simulation Yes, Classification Yes, Exclusion Yes, Silent Non
+-- Querying Source     |gm7.swglab.fr.ibm.com | port:9081 | version:9.2.23.0-20210317-1132| 2 servers
+-- Writing Destination |gm8.swglab.fr.ibm.com | port:9081 | version:9.2.23.0-20210317-1132| 3 servers
 
  Les classifications.
  Server | ID interne | Bigfix ID Destination | Bigfix ID Source | #Components source | # Valid Instances Confirmed | # Valid Instances Bundled | #Instances unmodified | #Instances Invalid | Reasons Invalid Instances |
@@ -41,11 +41,4 @@ FRDOSOUEN|	1612917	| 6778593	|5	|0	|0	|0	|5	|.:Incorrect product_realase_guid va
 gm8|25|552562510|No source Bigfix id |
 qradar-gm|81|1626422064|No source Bigfix id |
 
-
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```
+``
