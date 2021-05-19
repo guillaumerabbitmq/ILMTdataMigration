@@ -21,6 +21,7 @@ An XML file is provide to setup common parameters of actions to be run during th
  - Set up a list of server to migrate into that file. One server per line : "inputserver"
 
 # How to run
+perl MigrationILMT1.4.pl
 Migration begins, Version 1.4, Mode simulation Yes, Classification Yes, Exclusion Yes, Silent Non
 
  -- Querying Source     |gm7.swglab.fr.ibm.com | port:9081 | version:9.2.23.0-20210317-1132| 2 servers
@@ -30,13 +31,11 @@ Migration begins, Version 1.4, Mode simulation Yes, Classification Yes, Exclusio
  Les classifications.
  Server | ID interne | Bigfix ID Destination | Bigfix ID Source | #Components source | # Valid Instances Confirmed | # Valid Instances Bundled | #Instances unmodified | #Instances Invalid | Reasons Invalid Instances |
 gm8|25|552562510|No source Bigfix id found|
-gm92|43|15462954|No source Bigfix id found|
-qradar-gm.boiscolombes.fr.ibm.com|81|1626422064|No source Bigfix id found|
+qradar-gm|81|1626422064|No source Bigfix id found|
 FRDOSOUEN|	1612917	| 6778593	|5	|0	|0	|0	|5	|.:Incorrect product_realase_guid value - it can not be found in the catalog.|	Migration
 
 
  Les exclusions.
  Serveur | Internal ID | Bigfix ID Destination | Bigfix ID Source | Nb d'exclusion | Details...
 gm8|25|552562510|No source Bigfix id |
-gm92|43|15462954|No source Bigfix id |
-qradar-gm.boiscolombes.fr.ibm.com|81|1626422064|No source Bigfix id |
+qradar-gm|81|1626422064|No source Bigfix id |
