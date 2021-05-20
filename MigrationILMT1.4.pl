@@ -115,8 +115,8 @@ my @destServers = @{ $destServersRaw->{'rows'} };
 if ($config->{classification} eq "Yes") {
 # Recherche des classifications
 
-writeMsg ("\n Les classifications.");
-writeMsg ("\n Server | ID interne | Bigfix ID Destination | Bigfix ID Source | #Components source | # Valid Instances Confirmed | # Valid Instances Bundled | #Instances unmodified | #Instances Invalid | Reasons Invalid Instances |") ;
+writeMsg ("\n Classifications.");
+writeMsg ("\n Server | ID interne | Bigfix ID Destination | Bigfix ID Source | #Components source | #Valid Instances Confirmed | # Valid Instances Bundled | #Instances unmodified | #Instances Invalid | Reasons Invalid Instances |") ;
 
 foreach my $server ( @destServers ) {
 	# On ne prend que les serveurs selectionnes
@@ -169,8 +169,8 @@ foreach my $server ( @destServers ) {
 if ($config->{exclusion} eq "Yes") {
 
 # Recherche des exclusions
-writeMsg( "\n\n Les exclusions.");
-writeMsg( "\n Serveur | Internal ID | Bigfix ID Destination | Bigfix ID Source | Nb d'exclusion | Details...") ;
+writeMsg( "\n\n Exclusions.");
+writeMsg( "\n Serveur | Internal ID | Bigfix ID Destination | Bigfix ID Source | #exclusions | Details...") ;
 
 foreach my $server ( @destServers ) {
 	# On ne prend que les serveurs selectionnes
@@ -221,7 +221,7 @@ my $line = "\n" . $serverName . "|" . $destComputer_interne_id . "|" . $destComp
 					}	
 					if ( $debug ) {print FILEDEBUG "EXCLUSION\n"; print FILEDEBUG Dumper ($resDest);} ;
 				}
-			} else { $line = $line . "Simulation |" }	
+			} else { $line = $line . "Simulated |" }	
 	#	if ( $debug ) {print FILEDEBUG "ECRITURE\n"; print FILEDEBUG Dumper ($compPutSoft);} ;
 	
 		};
