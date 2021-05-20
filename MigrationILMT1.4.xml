@@ -2,13 +2,13 @@
 
 <config>
 
-	<destserver>gm8.swglab.fr.ibm.com</destserver>
+	<destserver>gm81.swglab.fr.ibm.com</destserver>
 	<destport>9081</destport>
-	<desttoken>de09fdff8bc44edd1452f00a5df2068ba3d25289</desttoken>
+	<desttoken>bc03911c9cca0d8e6f58fe045b8bb73512e4d72a</desttoken>
 
-	<srcserver>gm7.swglab.fr.ibm.com</srcserver>
+	<srcserver>gm8.swglab.fr.ibm.com</srcserver>
 	<srcport>9081</srcport>
-	<srctoken>f665de1a3a70c29bdd952f640906e0519a4aa0f6</srctoken>
+	<srctoken>de09fdff8bc44edd1452f00a5df2068ba3d25289</srctoken>
 
 	<!-- delimter is either the magic word 'tab' or the exact text you want between properties -->
 	<outputname>MigrationILMT</outputname>
@@ -17,6 +17,7 @@
 	<simulation>Yes</simulation>
 	<classification>Yes</classification>
 	<exclusion>Yes</exclusion>
+	<inputserver>gm8</inputserver>
 	<silent>Non</silent>
 	
 </config>

@@ -133,7 +133,7 @@ foreach my $server ( @destServers ) {
 		$line = $line . $srcComputer_bigfix_id . "|";
 		if ($silent) { print $destComputer_interne_id . "\n" }; 
 		# Recherche de logiciels sources de ce serveur
-		my $url = "${srcbase}/api/sam/v2/software_instances?token=${srctoken}";
+		my $url = "${srcbase}api/sam/v2/software_instances?token=${srctoken}";
 		$url = $url . "&limit=150&columns[]=product_name&columns[]=component_name&columns[]=discovery_path&columns[]=is_charged&columns[]=is_confirmed&columns[]=computer_dns_name&columns[]=discoverable_guid&columns[]=product_release_guid&columns[]=metric_id";
 		$url = $url . "&criteria=\{\"and\":[[\"is_present\",\"=\",\"1\"],[\"computer_bigfix_id\",\"=\",\"${srcComputer_bigfix_id}\"]]}";
 		my $contSoft = processURLbrut($url);
@@ -186,7 +186,7 @@ my $line = "\n" . $serverName . "|" . $destComputer_interne_id . "|" . $destComp
 	if( exists( $srcServerNames{$server->{'name'}} ) ) {
 		# Recherche de logiciels exclus de ce serveur
 		if ($silent ) { print  $destComputer_interne_id . "\n" }; 
-		my $url = "${srcbase}/api/sam/v2/software_instances?token=${srctoken}";
+		my $url = "${srcbase}api/sam/v2/software_instances?token=${srctoken}";
 		$url = $url . "&columns[]=instance_id&columns[]=component_name&columns[]=exclusion_or_suppress_comment";
 		$url = $url . "&criteria=\{\"and\":[[\"is_excluded\",\"=\",\"1\"],[\"computer_name\",\"=\",\"${serverName}\"]]\}" ;
 		my $Exclusions = processURL($url);
@@ -289,7 +289,7 @@ sub queryServers {
 # DOC: https://www.ibm.com/support/knowledgecenter/SS8JFY_9.2.0/com.ibm.lmt.doc/Inventory/integration/r_get_computers_v2.html#new_get_software_instances
 
 	my ( $srcbase, $srctoken ) = @_;
-	my $url = "${srcbase}/api/sam/v2/computers?token=${srctoken}";
+	my $url = "${srcbase}api/sam/v2/computers?token=${srctoken}";
 	$url = $url . "&columns[]=name&columns[]=last_seen&columns[]=id&columns[]=bigfix_id";
 	$url = $url . "&criteria=\{\"and\":[[\"last_seen\",\"last\",\"P1M\"],[\"is_deleted\",\"=\",\"0\"]]\}" ;
 	my $Servers = processURL($url);
